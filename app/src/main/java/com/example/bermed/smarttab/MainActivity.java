@@ -14,6 +14,6 @@ public class MainActivity extends AppCompatActivity {
 
         // commentaire
 
-        TextView tv = (TextView) findViewById(R.id.tv);
+        
     }
 }
