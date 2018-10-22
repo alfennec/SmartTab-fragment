@@ -3,14 +3,13 @@ package com.example.bermed.smarttab;
 import android.support.v4.view.PagerAdapter;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.widget.Button;
 import android.widget.TableLayout;
 import android.widget.TextView;
-import android.widget.Toolbar;
-
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
 
-        final PagerAdapter adapter = new PagerAdapter(getSupportFragmentManager(), tabLayout.getTabCount());
+        final PagerAdapter adapter = new com.example.bermed.smarttab.fragments.PagerAdapter(getSupportFragmentManager(), tabLayout.getTabCount());
 
         viewPager.setAdapter(adapter);
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
